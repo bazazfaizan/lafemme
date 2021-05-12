@@ -12,6 +12,7 @@ if ($_SESSION["loggedIn"] == true) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	$loginEmail = $_POST['username'];
+	
 	$loginPassword = $_POST['password'];
 
 	$conn = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
